@@ -1,0 +1,157 @@
+body{
+	background-color: #FBF6EA;
+	font-family: 'garamond';
+	background-image: url('..images/dark_embroidery.png');
+	font-style: italic;
+	color: #3F3F3F;
+}
+
+img{
+	width: 100%;
+	max-width: 100%;
+	height: auto;
+}
+h1{
+	font-size: 45px;
+}
+a{
+	color: black;
+	text-decoration: none;
+}
+a:hover{
+	color:gray;
+	text-decoration: none;
+}
+p{
+	font-size: 22px;
+}
+.navbar-default{
+	background-image: url('../images/trans.png');
+	background-color: transparent;
+	border:none;
+
+}
+.navbar-default .navbar-nav>li>a{
+	color:white;
+	font-size: 17px;
+}
+.navbar-default .navbar-nav>li>a:hover{
+	color:white;
+}
+.index-background{
+	background-image: url('../images/background-image.png');
+	padding: 0;
+	margin: 0;
+	height: 100%;
+	background-size: cover;
+    background-position: center;
+}
+.marrom{
+	background-color: #45302b;
+}
+.frase h1{
+		text-align: center;
+}
+.frase{
+	background-color: #ec9c5d;
+}
+
+.gilmara{
+	padding: 0;
+}
+
+
+.img-destaque{
+	height: 400px;
+	text-align: center;
+	background-size: cover;
+    background-position-x: center;
+}
+
+.img-destaque a{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 1s ease-in-out;
+  	-moz-transition: all 1s ease-in-out;
+  	-o-transition: all 1s ease-in-out;
+  	transition: all 1s ease-in-out;
+}
+
+
+
+.img-destaque:hover a{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    opacity: 0.7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-transition: all 1s ease-in-out;
+  	-moz-transition: all 1s ease-in-out;
+  	-o-transition: all 1s ease-in-out;
+  	transition: all 1s ease-in-out;
+}
+
+.img-destaque h1{
+    margin-top:30%;
+}
+
+.novidade {
+	background-image: url('../images/dark_embroidery.png');
+	
+}
+
+.novidade h1{
+	text-align: center;
+	color: white;
+	font-style: italic;
+}
+
+.sobre{
+	text-align: center;
+}
+
+.sobre h1{
+	margin-top: 15%;
+}
+
+.single{
+	margin-top: 45px;
+}
+
+.novidade-wrapper{
+	background-color: white;
+}
+
+.novidade-post h1{
+	padding: 10px 0;
+	color: black;
+	font-size: 25px
+} 
+
+.novidade-post  p{
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	text-align: center;
+} 
+
+.texto{
+	padding: 50px;
+}
+
+.texto h1{
+	font-size: 30px;
+}
+
+@media(max-width: 790px){
+	.sobre h1{
+	margin-top: 5%;
+	}
+}
