@@ -1,7 +1,8 @@
 <section class="galeria container-fluid">
 <?php $query2 = new WP_Query(array(
-  'category_name' => 'destaque',
-  'count' => 15
+    'post_type' => 'page',
+    'post_parent' => 41,
+    'post_count' => 9
 )); ?>
   <div class="row">
   <?php 

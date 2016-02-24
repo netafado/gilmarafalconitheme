@@ -40,7 +40,7 @@ function new_post_type(){
       ),
       'public' => true,
       'has_archive' => true,
-      'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+      'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt')
     )
   );
 	//adicona serviços
@@ -53,8 +53,11 @@ function new_post_type(){
       	),
      	 'public' => true,
       	'has_archive' => true,
-      	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt', 'comments' )
+      	'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'excerpt')
 		) );
 }
 add_action( 'init', 'new_post_type' );
+if ( ! isset( $content_width ) ) {
+    $content_width = 1100;
+}
 ?>
