@@ -118,7 +118,10 @@ p{
 .img-destaque h1{
     margin-top:30%;
 }
-
+.logo-sobre{
+	max-width: 40%;
+	color: white;
+}
 .novidade {
 	background-image: url('../images/dark_embroidery.png');
 	
@@ -128,16 +131,51 @@ p{
 	text-align: center;
 	color: white;
 	font-style: italic;
+	margin-top: 50px;
 }
-
+.textura{
+	background-image: url('../images/dark_embroidery.png');
+}
 .sobre{
 	text-align: center;
 }
-
+.left-sobre{
+	background-color: white;
+}
 .sobre h1{
-	margin-top: 15%;
+	margin-top: 30px;
+	color: white;
+}
+.sobre p{
+	margin-top: 30px;
+	color: white;
+}
+.sobre a{
+	color: white;
+}
+.sobreRight{
+	height: 400px;
+}
+.sobreLeft{
+	padding: 20px;
 }
 
+.social-midia div{
+	padding: 30px;
+	text-align: center;
+}
+.social-midia div img{
+	max-width: 50%;
+}
+.instagran{
+	background-color: #ec9c5d;
+}
+.facebook{
+	background-color: #ec8c5c;
+}
+.twitter{
+	background-color: #ec7b5d;
+}
 .single{
 	margin-top: 45px;
 }
@@ -149,7 +187,8 @@ p{
 .novidade-post h1{
 	padding: 10px 0;
 	color: black;
-	font-size: 25px
+	font-size: 25px;
+
 } 
 
 .novidade-post  p{
@@ -160,7 +199,7 @@ p{
 } 
 
 .texto{
-	padding: 50px;
+	padding: 100px;
 }
 
 .texto h1{

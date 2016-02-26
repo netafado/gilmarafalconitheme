@@ -1,7 +1,7 @@
 <section class="novidade">
  <div class="container">
     <div class="row">
-    <h1>Novidades</h1>
+    <h1 class="novidades-title">Novidades</h1>
 
 
   <?php 
