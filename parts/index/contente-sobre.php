@@ -2,7 +2,7 @@
 <section class="container-fluid">
   <div class="row textura">
 
-  <div class="sobre col-sm-6 sobreLeft">
+  <div class="sobre col-sm-6 sobreLeft wow fadeInUp" data-wow-delay='0.2s'>
 
 
     <img src="<?php echo get_template_directory_uri() . '/images/logotipo.png'; ?>" class="logo-sobre">
@@ -20,8 +20,10 @@
     <p><?php the_excerpt(); ?></p>
     <p><a href="<?php the_permalink(); ?>"> Leia mais</a></p>
   </div>
-  <div class="sobre col-sm-6 sobreRight" style="background-image:url(<?php echo $imgUrl ?>)">
-    <a href="<?php the_permalink(); ?>"></a>
+  <div class="sobre col-sm-6 sobreRight wow fadeInUp" data-wow-delay='0.4s'>
+    <a href="<?php the_permalink(); ?>">
+      <img src="<?php echo $imgUrl; ?>">
+    </a>
   </div>
   <?php 
     endwhile;

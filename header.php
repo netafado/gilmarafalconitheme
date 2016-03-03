@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html>
 <meta <?php language_attributes(); ?>>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
 <head>
 	<title><?php bloginfo( 'name' ) ?></title>
   <?php wp_head() ; ?>
@@ -11,7 +14,7 @@
 <!-- Menu para navegação principal -->
 
 <nav <?php post_class( $class = 'navbar navbar-default navbar-fixed-top' );  ?> 
-style="<?php if (is_admin_bar_showing()){echo 'margin-top:27px';} ?>"><!-- Se mostrar o admin bar acrescenta 27px de margen-top -->
+style="<?php if (is_admin_bar_showing()){echo 'margin-top:27px';} ?>" id="navbar"><!-- Se mostrar o admin bar acrescenta 27px de margen-top -->
 
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->

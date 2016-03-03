@@ -1,8 +1,8 @@
-*{
-
+html{
+	height: 100%;
 }
-
 body{
+	height: 100%;
 	background-color: #FBF6EA;
 	font-family: 'garamond';
 	background-image: url('..images/dark_embroidery.png');
@@ -11,8 +11,7 @@ body{
 }
 
 img{
-	width: 100%;
-	max-width: 100%;
+	
 	height: auto;
 }
 h1{
@@ -43,25 +42,41 @@ p{
 	max-width: 35%
 }
 .navbar-default{
-	background-image: url('../images/trans.png');
-	background-color: transparent;
 	border:none;
-
+	background-color: rgba(0,0,0,0.3);
+  }
+.opaco{
+	-webkit-transition: all 2s ease-in-out;
+   -moz-transition: all 2s ease-in-out;
+   -o-transition: all 2s ease-in-out;
+   transition: all 2s ease-in-out;
+	background-color: rgba(0,0,0,0.8);
 }
 .navbar-default .navbar-nav>li>a{
 	color:white;
 	font-size: 17px;
+	-webkit-transition: all 1s ease-in-out;
+   -moz-transition: all 1s ease-in-out;
+   -o-transition: all 1s ease-in-out;
+   transition: all 1s ease-in-out;
 }
 .navbar-default .navbar-nav>li>a:hover{
 	color:white;
+	background-color: #e7e7e7;
+	color: black;
 }
 .index-background{
-	background-image: url('../images/background-image2.png');
 	padding: 0;
 	margin: 0;
 	height: 100%;
 	background-size: cover;
+	display:block;
     background-position: center;
+    background-attachment: fixed;
+    -webkit-transition: all 2s ease-in-out;
+   -moz-transition: all 2s ease-in-out;
+   -o-transition: all 2s ease-in-out;
+   transition: all 2s ease-in-out;
 }
 .marrom{
 	background-color: #45302b;
@@ -83,6 +98,7 @@ p{
 	text-align: center;
 	background-size: cover;
     background-position-x: center;
+
 }
 
 .img-destaque a{
@@ -99,7 +115,9 @@ p{
   	transition: all 1s ease-in-out;
 }
 
-
+.content-slide{
+	height: 100%;
+}
 
 .img-destaque:hover a{
     width: 100%;
@@ -114,9 +132,29 @@ p{
   	-o-transition: all 1s ease-in-out;
   	transition: all 1s ease-in-out;
 }
+.barra-chocolate{
+
+	max-width: 15%;
+	margin: auto;
+	
+}
+.div-center{
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	
+}
+.div-center img{
+	margin: auto;
+}
 
 .img-destaque h1{
-    margin-top:30%;
+    margin-top:180px;
+    font-size: 30px;
+    position: absolute;
+    text-align: center;
+    width: 100%;
 }
 .logo-sobre{
 	max-width: 40%;
@@ -125,6 +163,9 @@ p{
 .novidade {
 	background-image: url('../images/dark_embroidery.png');
 	
+}
+.galeria{
+	margin-bottom: 80px;
 }
 
 .novidade h1{
@@ -135,6 +176,12 @@ p{
 }
 .textura{
 	background-image: url('../images/dark_embroidery.png');
+	overflow: hidden;
+	
+}
+.textura img{
+	background-image: url('../images/dark_embroidery.png');
+	overflow: hidden;
 }
 .sobre{
 	text-align: center;
@@ -154,10 +201,19 @@ p{
 	color: white;
 }
 .sobreRight{
-	height: 400px;
+	height: 100%;
+	padding: 0px;
+	padding-right: 0px;
+    padding-left: 0px;
+    background: white;
+    margin: 0px;
+
+}
+.sobreRight img{
+	float: left;
 }
 .sobreLeft{
-	padding: 20px;
+	padding: 40px;
 }
 
 .social-midia div{
@@ -187,7 +243,7 @@ p{
 .novidade-post h1{
 	padding: 10px 0;
 	color: black;
-	font-size: 25px;
+	font-size: 30px;
 
 } 
 
@@ -208,6 +264,18 @@ p{
 
 @media(max-width: 790px){
 	.sobre h1{
-	margin-top: 5%;
+		margin-top: 5%;
 	}
+	.texto {
+    padding: 50px;
+}
+	.texto h1{
+		font-size: 25px;
+	}
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+   .collapse {
+       display: none !important;
+   }
 }

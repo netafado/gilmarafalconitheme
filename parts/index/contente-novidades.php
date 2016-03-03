@@ -1,6 +1,6 @@
-<section class="novidade">
+<section class="novidade wow fadeInUp">
  <div class="container">
-    <div class="row">
+    <div class="row galeria wow fadeInUp" >
     <h1 class="novidades-title">Novidades</h1>
 
 

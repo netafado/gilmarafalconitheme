@@ -3,9 +3,17 @@
 function addScripts(){
 	wp_enqueue_style("Bootstrap", get_template_directory_uri() . '/css/bootstrap.min.css', array(), '1.0');
 	wp_enqueue_style( "Estilo", get_template_directory_uri() . '/css/app.css', array(), '1.0');
+  wp_enqueue_style( "animate", get_template_directory_uri() . '/css/animate.css', $ver = false );
+
 
 	wp_enqueue_script('jquery');
 	wp_enqueue_script("bootstrap", get_template_directory_uri() . '/js/bootstrap.min.js', '1.0',array('jquery'), true);
+  wp_enqueue_script("wow", get_template_directory_uri() . '/js/wow.min.js', '1.0',array('jquery'), true);
+
+  if(is_home()){
+    wp_enqueue_script("slideshow", get_template_directory_uri() . '/js/slideshow.js', '1.0', true);
+  }
+
 	wp_enqueue_script("app", get_template_directory_uri() . '/js/app.js', '1.0', array('jquery'), true);
 
 }
