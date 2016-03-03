@@ -55,7 +55,7 @@ window.onload = function(){
 	window.addEventListener('scroll', function(){
 			scroolldow(window.scrollY);
 			if(document.querySelector('.index-background') != undefined)
-				parallex(document.querySelector('.index-background'), 3, window.scrollY);
+				parallex(document.querySelector('.index-background'), 5, window.scrollY);
 		});
 
 	window.addEventListener('load', divFullScreen() );

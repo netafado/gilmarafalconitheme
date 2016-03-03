@@ -32,14 +32,21 @@ a:hover{
 p{
 	font-size: 22px;
 }
+input, textarea{
+	border: none;
+    padding: 15px;
+}
+
 .navbar-header{
 	height: 80px
 }
 .navbar-brand {
-	padding: 2px
+	padding: 2px;
+	width: 260px;
+    height: 80px;
 }
 .navbar-brand img{
-	max-width: 35%
+	max-width: 55%
 }
 .navbar-default{
 	border:none;
@@ -73,10 +80,10 @@ p{
 	display:block;
     background-position: center;
     background-attachment: fixed;
-    -webkit-transition: all 2s ease-in-out;
-   -moz-transition: all 2s ease-in-out;
-   -o-transition: all 2s ease-in-out;
-   transition: all 2s ease-in-out;
+    -webkit-transition: background-image 2s ease-in-out;
+   -moz-transition: background-image 2s ease-in-out;
+   -o-transition: background-image 2s ease-in-out;
+   transition: background-image 2s ease-in-out;
 }
 .marrom{
 	background-color: #45302b;
@@ -272,6 +279,7 @@ p{
 	.texto h1{
 		font-size: 25px;
 	}
+
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
