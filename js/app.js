@@ -6,19 +6,12 @@ window.onload = function(){
 		
 		divFullScreen();
 		new WOW().init();
-		var images = [
-		'back-cereja.jpg',
-		'back-morango.jpg',
-		'background-image2.png',
-		'back-bolo.jpg',
-		'bc-bem-casado.jpg'
-		];
+		
 		
 		if(document.querySelector('.index-background') != undefined){
-			slide = new SlideShow(images, 5000);
+			slide = new SlideShow(5000);
 			slide.init();
 		}
-		
 	
 	}
 	
@@ -60,7 +53,4 @@ window.onload = function(){
 
 	window.addEventListener('load', divFullScreen() );
 	window.addEventListener('resize', divFullScreen() );
-	
-	
- 
 }

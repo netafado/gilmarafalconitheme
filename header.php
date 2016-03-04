@@ -25,7 +25,8 @@ style="<?php if (is_admin_bar_showing()){echo 'margin-top:27px';} ?>" id="navbar
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="<?php bloginfo( $show = 'url' ) ?>"><img src="<?php echo get_template_directory_uri() . '/images/logotipo.png'; ?>" class="img-responsive"></a>
+      <a class="navbar-brand" href="<?php bloginfo( $show = 'url' ) ?>">
+        <img src="<?php echo get_template_directory_uri() . '/images/logotipo.png'; ?>" class="img-responsive"></a>
     </div>
  <?php
             wp_nav_menu( array(
